@@ -1,0 +1,23 @@
+{
+  "name": "browser-node",
+  "version": "0.1.0-fa32a710",
+  "scripts": {
+    "build": "babel src --out-dir build --extensions \".js\" --source-maps inline"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "main": "build/index.js",
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  },
+  "browser": {
+    "./build/hello-node.js": "./build/hello-browser.js"
+  }
+}

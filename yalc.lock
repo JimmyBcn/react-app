@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "./browser-node": {
+      "signature": "fa32a710542a2672abb00dc980dfc302",
+      "file": true
+    }
+  }
+}

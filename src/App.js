@@ -2,7 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Greeter from "browser-node"
+
 function App() {
+
+  var greeter = new Greeter();
+  // should log "Hello from browser"
+  greeter.greet(); 
+
   return (
     <div className="App">
       <header className="App-header">
